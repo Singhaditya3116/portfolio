@@ -1,0 +1,377 @@
+/* {
+  background-color: black;
+  color: white;
+} */
+html {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+body {
+  margin: 0px;
+  /* font-size: 30px; */
+}
+
+/* --------------------------Header */
+
+#body-header {
+  color: white;
+  height: 65vh;
+  width: 100%;
+  background-image: url(./macbook_mouse.jpg);
+  /* background-color: #212529; */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  background-attachment: fixed;
+  /* margin-top: 0px; */
+}
+
+/* Navigation List */
+
+.horizontal-list {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.horizontal-list li {
+  display: inline-block;
+  margin: 20px 70px 0px 70px;
+  font-size: 20px;
+}
+
+.horizontal-list li a {
+  text-decoration: none;
+  color: white;
+  transition: color 3s, border-bottom 3s;
+}
+
+.horizontal-list li a:hover {
+  border-bottom: 1px solid white;
+  color: lightgrey;
+}
+
+/* Name and Social Icons */
+
+a {
+  text-decoration: none;
+}
+#name-container {
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-weight: bold;
+}
+#name {
+  font-size: 3rem;
+}
+
+#social-icons ul {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 0px;
+}
+#social-icons li {
+  display: inline-block;
+  padding: 2rem;
+  text-align: center;
+  /* box-sizing: border-box; */
+}
+
+#social-icons img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 40%;
+}
+
+#social-icons img:hover {
+  /* border-style: solid;
+  border-color: white;
+  border-width: 2px; */
+  /* border: 4px solid white; */
+  box-shadow: 0px 0px 15px 5px rgba(230, 196, 196, 0.2);
+}
+
+#social-icons ion-icon {
+  font-size: 1.9rem;
+  border-radius: 40%;
+}
+
+#social-icons ion-icon:hover {
+  box-shadow: 0px 0px 15px 5px rgba(230, 196, 196, 0.2);
+}
+
+/* Section */
+
+section {
+  width: 80%;
+  display: flex;
+  /* height: 45vh; */
+  flex-direction: column;
+  align-items: center;
+  margin: 2% 10% 0% 10%;
+}
+.section-heading {
+  margin-bottom: 3rem;
+}
+section:nth-child(2n + 1) {
+  background-color: white;
+}
+
+section:nth-child(2n) {
+  background-color: #f7f7f8;
+}
+
+.section-heading span {
+  font-size: 30px;
+  color: #2857a4;
+  position: relative;
+  top: -12px;
+}
+
+/* About Section */
+#profile-photo {
+  height: 15rem;
+  width: 15rem;
+  margin: auto;
+  margin-top: -8%;
+  position: relative;
+}
+#profile-photo img {
+  height: 100%;
+  width: 100%;
+  border: 4px solid white;
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+}
+
+#description {
+  margin-top: 2.5rem;
+}
+
+/* Skills Section */
+
+.section-logo {
+  height: 2.1rem;
+  width: 2.1rem;
+}
+
+.all-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  height: 200px;
+}
+
+.skills-display {
+  /* border: 2px solid black; */
+  /* width: 70%; */
+  /* margin: 0% 5% 0% 5%; */
+}
+
+.skill-progress {
+  width: 9rem;
+  height: 1.6rem;
+  /* border: 2px solid black; */
+  box-shadow: 0.5px 0.5px 2px 1px black;
+  background-color: lightgrey;
+  border-radius: 0.8rem;
+  margin: 1%;
+}
+
+.skill-percentage {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.skill-name {
+  width: 30%;
+  height: 100%;
+  padding: 0.3rem;
+  margin-left: 6px;
+  color: white;
+}
+
+/* Work Experience */
+
+.workexp-icon {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.timeline {
+  border: 2px solid black;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.timeline-boxes {
+  border: 2px solid black;
+  height: 20%;
+  width: 27%;
+  margin: 10px;
+  min-height: 200px;
+  position: relative;
+  left: 10%;
+}
+
+.timeline-boxes:nth-child(2n) {
+  left: 65%;
+}
+
+.timeline-boxes:nth-child(2n+1):after{
+  content: "";
+  position: absolute;
+  top:40%;
+  right:-46.8%;
+  height:0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: #2857a4;
+  z-index:1;
+}
+
+.timeline-boxes:nth-child(2n):after{
+  content: "";
+  position: absolute;
+  top:40%;
+  left:-59.4%;
+  height:0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: #2857a4;
+  z-index:1;
+}
+
+.timeline-boxes:nth-child(2n) .introduction{
+  position: relative;
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: flex-start;
+   padding: 1% 0% 3% 3%;
+}
+
+.timeline-boxes:nth-child(2n) .company-logo{
+  position: absolute;
+  top:2%;
+  right:2%;
+}
+
+.timeline-divider {
+  border-right: 4px dashed #0096fa6b;
+  position: absolute;
+  height: 78%;
+  width: 0%;
+  top: 8%;
+  left: 50%;
+}
+
+.timeline-traveller {
+ 
+  transform: rotate(90deg);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30%;
+  z-index: 2;
+}
+
+ .timeline-traveller img {
+  width: 60px;
+  height: 60px;
+ }
+
+
+.designation, .company-name , .duration{
+   font-size: 1rem;
+   font-weight: 700;
+   padding: 0.3%;
+ } 
+
+ .introduction{
+   position: relative;
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: flex-end;
+   padding: 1% 3% 3% 0%;
+ }
+
+ .designation{
+   color: rgb(65, 65, 173);
+ }
+ .company-name{
+   color: purple;
+ }
+
+ .description{
+   padding-left: 3%;
+ }
+
+
+
+ .company-logo img{
+   width:50px;
+   height: 40px;
+ }
+
+ .company-logo:nth-child(2n+1){
+   position: absolute;
+   left: 5px;
+   top: 5px;
+ }
+
+
+ /*------------------------------------------------------------------------------------------------*/
+
+
+ /* Contact */
+ .personal-details{
+   display: flex;
+   width:100%;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   
+ }
+
+ #my-details{
+   font-size: 1.2rem ;
+ }
+
+ /* #email,#mobile,#whatsapp{
+   font-size: 1.2rem;
+ } */
+
+ .personal-details img{
+   width: 20px;
+   height: 20px;
+ }
+
+ #contact{
+   padding-bottom: 50px;
+   
+ }
+/* Percentage */
+.eighty-five-percent {
+  height: inherit;
+  width: 85%;
+  background-color: #34568b;
+}
+
+.ninety-percent {
+  height: inherit;
+  width: 90%;
+  background-color: rgb(84, 122, 27);
+}
+
+.sixty-five-percent {
+  height: inherit;
+  width: 65%;
+  background-color: #8d6e63;
+}
+
+.seventy-percent {
+  height: inherit;
+  width: 70%;
+  background-color: #a7543b;
+}
+}
