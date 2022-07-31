@@ -10,33 +10,30 @@ body {
   margin: 0px;
   /* font-size: 30px; */
 }
-
-/* --------------------------Header */
-
-#body-header {
-  color: white;
-  height: 65vh;
-  width: 100%;
-  background-image: url(./img/macbook_mouse.jpg);
-  /* background-color: #212529; */
-  background-size: cover;
-  background-position: center;
-  opacity: 0.8;
-  background-attachment: fixed;
-  /* margin-top: 0px; */
-}
-
 /* Navigation List */
+
+nav {
+  background-color: black;
+  height: 3rem;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
 
 .horizontal-list {
   list-style-type: none;
   text-align: center;
-  margin-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  margin: 0px;
+  width: 95%;
 }
 
 .horizontal-list li {
-  display: inline-block;
-  margin: 20px 70px 0px 70px;
   font-size: 20px;
 }
 
@@ -51,6 +48,72 @@ body {
   color: lightgrey;
 }
 
+.menu {
+  margin: 0.8rem;
+  width: 5%;
+  height: 100%;
+  display: none;
+}
+
+.menu-item {
+  background-color: white;
+  width: 35px;
+  height: 4px;
+  margin: 4.5px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.cross #menu-item1 {
+  transform: translateY(9.5px) rotate(-45deg);
+  /* margin: 0px; */
+}
+.cross #menu-item3 {
+  transform: translateY(-8px) rotate(45deg);
+  /* margin: 0px; */
+}
+.cross #menu-item2 {
+  opacity: 0;
+}
+
+.cross .horizontal-list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cross {
+    height: 20rem;
+    opacity: 0.8;
+  }
+
+  .horizontal-list {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 2%;
+    cursor: pointer;
+  }
+}
+
+/* --------------------------Header */
+#body-header {
+  color: white;
+  height: 65vh;
+  width: 100%;
+  background-image: url(./img/macbook_mouse.jpg);
+  /* background-color: #212529; */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  background-attachment: fixed;
+  margin-top: 0px;
+}
+
 /* Name and Social Icons */
 
 a {
@@ -60,21 +123,26 @@ a {
   letter-spacing: 0.1rem;
   text-align: center;
   font-weight: bold;
+  padding-top: 5rem;
 }
 #name {
   font-size: 3rem;
+  margin-top: 0px;
+}
+
+#social-icons {
+  margin-top: 6rem;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 #social-icons ul {
   list-style-type: none;
   text-align: center;
-  margin-top: 0px;
-}
-#social-icons li {
-  display: inline-block;
-  padding: 2rem;
-  text-align: center;
-  /* box-sizing: border-box; */
+  margin: 0px;
+  padding-left: 0px;
+  display: flex;
+  justify-content: space-around;
 }
 
 #social-icons img {
@@ -98,6 +166,36 @@ a {
 
 #social-icons ion-icon:hover {
   box-shadow: 0px 0px 15px 5px rgba(230, 196, 196, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  #name {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+
+  #social-icons {
+    margin-top: 4rem;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu {
+    right: 4%;
+  }
+
+  #name {
+    font-size: 2rem;
+    margin-top: 4.5rem;
+  }
+
+  #social-icons {
+    margin-top: 5rem;
+    margin-left: 7%;
+    margin-right: 7%;
+  }
 }
 
 /* Section */
@@ -133,7 +231,7 @@ section:nth-child(2n) {
   height: 15rem;
   width: 15rem;
   margin: auto;
-  margin-top: -8%;
+  margin-top: -13%;
   position: relative;
 }
 #profile-photo img {
@@ -146,6 +244,18 @@ section:nth-child(2n) {
 
 #description {
   margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  #profile-photo {
+    margin-top: -28%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #profile-photo {
+    margin-top: -35%;
+  }
 }
 
 /* Skills Section */
