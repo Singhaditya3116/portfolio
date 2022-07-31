@@ -248,6 +248,8 @@ section:nth-child(2n) {
   margin-top: 2.5rem;
 }
 
+/* About Section media query */
+
 @media screen and (max-width: 768px) {
   #profile-photo {
     margin-top: -28%;
@@ -259,6 +261,7 @@ section:nth-child(2n) {
     margin-top: -35%;
   }
 }
+/* -----About section media query */
 
 /* Skills Section */
 
@@ -276,13 +279,7 @@ section:nth-child(2n) {
 }
 
 #skills-section {
-  height: 300px;
-}
-
-.skills-display {
-  /* border: 2px solid black; */
-  /* width: 70%; */
-  /* margin: 0% 5% 0% 5%; */
+  height: 35vh;
 }
 
 .skill-progress {
@@ -306,6 +303,26 @@ section:nth-child(2n) {
   margin-left: 6px;
   color: white;
 }
+/*Skill Section Media query*/
+
+@media screen and (max-width: 922px) {
+  #skills-section {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 602px) {
+  #skills-section {
+    height: 65vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #skills-section {
+    height: 60vh;
+  }
+}
+/*--Skill Section media query*/
 
 /* Work Experience */
 
@@ -395,29 +412,6 @@ section:nth-child(2n) {
   top: 30%;
   z-index: 2;
 }
-/*Skill Section Media query*/
-@media screen and (max-width: 1240px) {
-  #skills-section {
-    height: 380px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .skill-progress {
-    margin: 2%;
-  }
-
-  #skills-section .section-heading {
-    margin-bottom: 1.5rem;
-  }
-}
-
-@media screen and (max-width: 628px) and (min-width: 600px) {
-  #skills-section {
-    height: 600px;
-  }
-}
-/*--Skill Section media query*/
 
 @media screen and (max-width: 600px) {
   .timeline-boxes:nth-child(2n) {
@@ -456,12 +450,12 @@ section:nth-child(2n) {
     margin: 2%;
   }
 }
-
+/* 
 @media screen and (max-width: 560px) {
   #skills-section {
     height: 600px;
   }
-}
+} */
 
 .timeline-traveller img {
   width: 60px;
