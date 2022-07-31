@@ -35,6 +35,7 @@ nav {
 
 .horizontal-list li {
   font-size: 20px;
+  -webkit-tap-highlight-color: transparent; /*blue patch coming while clicking*/
 }
 
 .horizontal-list li a {
@@ -53,6 +54,7 @@ nav {
   width: 5%;
   height: 100%;
   display: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .menu-item {
@@ -188,11 +190,11 @@ a {
 
   #name {
     font-size: 2rem;
-    margin-top: 4.5rem;
+    margin-top: 3rem;
   }
 
   #social-icons {
-    margin-top: 5rem;
+    margin-top: 3.5rem;
     margin-left: 7%;
     margin-right: 7%;
   }
@@ -418,9 +420,6 @@ section:nth-child(2n) {
 /*--Skill Section media query*/
 
 @media screen and (max-width: 600px) {
-  section {
-    width: 90%;
-  }
   .timeline-boxes:nth-child(2n) {
     left: 15%;
   }
