@@ -18,7 +18,7 @@ nav {
   width: 100%;
   position: fixed;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
 }
@@ -63,7 +63,7 @@ nav {
   height: 4px;
   margin: 4.5px;
   border-radius: 5px;
-  transition: 0.3s ease;
+  transition: 0.5s ease;
 }
 
 .cross #menu-item1 {
@@ -259,6 +259,8 @@ section:nth-child(2n) {
 @media screen and (max-width: 480px) {
   #profile-photo {
     margin-top: -35%;
+    height: 12rem;
+    width: 12rem;
   }
 }
 /* -----About section media query */
@@ -279,7 +281,8 @@ section:nth-child(2n) {
 }
 
 #skills-section {
-  height: 35vh;
+  /* height: 35vh; */
+  padding-bottom: 1rem;
 }
 
 .skill-progress {
@@ -303,28 +306,8 @@ section:nth-child(2n) {
   margin-left: 6px;
   color: white;
 }
-/*Skill Section Media query*/
 
-@media screen and (max-width: 922px) {
-  #skills-section {
-    height: 40vh;
-  }
-}
-
-@media screen and (max-width: 602px) {
-  #skills-section {
-    height: 65vh;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  #skills-section {
-    height: 60vh;
-  }
-}
-/*--Skill Section media query*/
-
-/* Work Experience */
+/* Work Experience Section */
 
 .workexp-icon {
   width: 2.1rem;
@@ -413,50 +396,6 @@ section:nth-child(2n) {
   z-index: 2;
 }
 
-@media screen and (max-width: 600px) {
-  .timeline-boxes:nth-child(2n) {
-    left: 15%;
-  }
-
-  .timeline-boxes {
-    left: 15%;
-    height: 250px;
-    width: 80%;
-  }
-
-  .timeline-divider {
-    top: 0%;
-    height: 75%;
-    left: 10%;
-  }
-
-  .timeline-boxes:nth-child(2n + 1):after {
-    left: -8.6%;
-    top: 10%;
-  }
-
-  .timeline-boxes:nth-child(2n):after {
-    left: -8.6%;
-    top: 10%;
-  }
-
-  #accenture-divider {
-    height: 45%;
-  }
-
-  /* Skill Section*/
-
-  .skill-progress {
-    margin: 2%;
-  }
-}
-/* 
-@media screen and (max-width: 560px) {
-  #skills-section {
-    height: 600px;
-  }
-} */
-
 .timeline-traveller img {
   width: 60px;
   height: 60px;
@@ -492,6 +431,193 @@ section:nth-child(2n) {
 .company-logo img {
   width: 50px;
   height: 40px;
+}
+
+@media screen and (max-width: 1580px) {
+  .introduction {
+    padding: 3% 3% 3% 0%;
+  }
+
+  .timeline-boxes {
+    width: 33%;
+    left: 7%;
+  }
+
+  .timeline-boxes:nth-child(2n + 1) .company-logo {
+    top: 0.4rem;
+  }
+
+  .company-logo img {
+    width: 45px;
+    height: 35px;
+  }
+
+  .timeline-boxes:nth-child(2n + 1):after {
+    right: -29%;
+  }
+
+  .timeline-boxes:nth-child(2n) {
+    left: 59%;
+  }
+  .timeline-boxes:nth-child(2n):after {
+    left: -31.2%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .timeline-boxes {
+    width: 40%;
+    left: 3%;
+  }
+
+  .timeline-boxes:nth-child(2n) {
+    left: 56%;
+  }
+
+  .timeline-boxes:nth-child(2n):after {
+    left: -19.5%;
+  }
+
+  .timeline-boxes:nth-child(2n + 1):after {
+    right: -16%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .timeline-boxes {
+    width: 45%;
+    left: 0%;
+  }
+
+  .timeline-boxes:nth-child(2n + 1):after {
+    right: -9.7%;
+  }
+
+  .timeline-boxes:nth-child(2n) {
+    left: 53%;
+  }
+
+  .timeline-boxes:nth-child(2n):after {
+    left: -10.7%;
+  }
+
+  .company-logo img {
+    width: 40px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .timeline-boxes:nth-child(2n) {
+    left: 15%;
+  }
+
+  .timeline-boxes {
+    left: 15%;
+    width: 70%;
+  }
+
+  .timeline-divider {
+    top: 5%;
+    height: 81%;
+    left: 7%;
+  }
+
+  .timeline-boxes:nth-child(2n + 1):after {
+    left: -14.5%;
+    top: 26%;
+    height: 0.4rem;
+    width: 0.4rem;
+  }
+
+  .timeline-boxes:nth-child(2n):after {
+    left: -14.5%;
+    top: 26%;
+    height: 0.4rem;
+    width: 0.4rem;
+  }
+
+  #accenture-divider {
+    height: 45%;
+  }
+
+  .skill-progress {
+    margin: 2%;
+  }
+
+  #experience .timeline-divider {
+    height: 70%;
+  }
+
+  .timeline-traveller img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline-traveller img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .timeline-divider {
+    left: 3%;
+  }
+
+  .timeline-boxes {
+    left: 7%;
+    width: 90%;
+  }
+
+  .timeline-boxes:nth-child(2n) {
+    left: 7%;
+  }
+
+  .timeline-boxes:nth-child(2n + 1):after {
+    height: 0.4rem;
+    width: 0.4rem;
+    left: -7.4%;
+    top: 26%;
+  }
+
+  .timeline-boxes:nth-child(2n):after {
+    height: 0.4rem;
+    width: 0.4rem;
+    left: -7.5%;
+  }
+
+  .company-logo img {
+    width: 30px;
+    height: 20px;
+  }
+
+  .designation,
+  .company-name,
+  .duration {
+    font-size: 0.8rem;
+  }
+
+  .timeline-boxes .description {
+    font-size: 0.8rem;
+  }
+
+  .section-heading span {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .timeline-boxes:nth-child(2n + 1):after {
+    left: -8.4%;
+  }
+
+  .timeline-boxes:nth-child(2n):after {
+    left: -8.5%;
+  }
+  .section-heading span {
+    font-size: 20px;
+  }
 }
 
 /* Portfolio Section */
