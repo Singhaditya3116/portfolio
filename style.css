@@ -751,8 +751,10 @@ section:nth-child(2n) {
   -webkit-animation-name: slidingEffect85;
 
   animation-name: slidingEffect85;
+
   -webkit-animation-duration: 4s;
-  animation-duration: 2s;
+
+          animation-duration: 4s;
 }
 
 .ninety-percent {
@@ -761,8 +763,10 @@ section:nth-child(2n) {
   background-color: rgb(84, 122, 27);
   -webkit-animation-name: slidingEffect90;
   animation-name: slidingEffect90;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+
+  -webkit-animation-duration: 4s;
+
+          animation-duration: 4s;
 }
 
 .sixty-five-percent {
@@ -771,8 +775,10 @@ section:nth-child(2n) {
   background-color: #8d6e63;
   -webkit-animation-name: slidingEffect65;
   animation-name: slidingEffect65;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+
+  -webkit-animation-duration: 4s;
+
+          animation-duration: 4s;
 }
 
 .seventy-percent {
@@ -781,8 +787,10 @@ section:nth-child(2n) {
   background-color: #a7543b;
   -webkit-animation-name: slidingEffect70;
   animation-name: slidingEffect70;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+
+  -webkit-animation-duration: 4s;
+
+          animation-duration: 4s;
 }
 
 /*Animations */
