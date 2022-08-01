@@ -198,6 +198,15 @@ a {
     margin-left: 7%;
     margin-right: 7%;
   }
+
+  #social-icons img {
+    height: 1.7rem;
+    width: 1.7rem;
+  }
+  #social-icons ion-icon {
+    height: 1.7rem;
+    width: 1.7rem;
+  }
 }
 
 /* Section */
@@ -618,18 +627,24 @@ section:nth-child(2n) {
   .section-heading span {
     font-size: 20px;
   }
+  .skill-name {
+    font-size: 15px;
+  }
+  .section-logo {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
 }
 
 /* Portfolio Section */
 .work {
-  margin: 0% 7% 0% 7%;
+  margin: 3%;
   border: 2px solid rgb(210, 203, 223);
   border-radius: 7px;
   box-shadow: 0px 0px 10px 1px #3f3f46;
-  /* height: 50%;
-  width:33%; */
-  width: 325px;
-  height: 300px;
+  width: 11rem;
+  height: 13rem;
+  transition: 0.3s ease;
 }
 
 .work h5 {
@@ -639,8 +654,9 @@ section:nth-child(2n) {
 }
 
 .work:hover {
-  width: 335px;
-  height: 310px;
+  position: relative;
+  width: 11.5rem;
+  height: 13.5rem;
 }
 
 .work-view {
@@ -657,77 +673,9 @@ section:nth-child(2n) {
 
 .all-works {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
-}
-
-#portfolio {
-  height: 470px;
-}
-
-/*Porfolio media query*/
-
-@media screen and (max-width: 1410px) {
-  .work-view {
-    height: 87%;
-  }
-
-  .work h5 {
-    margin: 2% 0% 0% 0%;
-  }
-
-  .work {
-    width: 33%;
-    margin: 0% 5% 0% 5%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .work {
-    width: 33%;
-    margin: 0% 3% 0% 3%;
-  }
-
-  .work:hover {
-    width: 34%;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .work {
-    width: 33%;
-    margin: 0% 1% 0% 1%;
-    height: 250px;
-  }
-
-  .work-view {
-    height: 85%;
-  }
-
-  .work:hover {
-    width: 34%;
-    height: 260px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .all-works {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .work {
-    width: 70%;
-    height: 30%;
-    margin: 2%;
-  }
-
-  #portfolio {
-    height: 1200px;
-  }
-
-  .work:hover {
-    width: 71%;
-    height: 31%;
-  }
+  justify-content: center;
 }
 
 /* Contact */
@@ -742,22 +690,24 @@ section:nth-child(2n) {
   font-size: 1.2rem;
 }
 
-/* #email,#mobile,#whatsapp{
-   font-size: 1.2rem;
- } */
-
 .personal-details img {
   width: 20px;
   height: 20px;
 }
 
 #contact {
-  padding-bottom: 50px;
+  padding-bottom: 2.5rem;
 }
 
 #contact-logo {
-  height: 1.7rem;
-  width: 1.7rem;
+  height: 1.3rem;
+  width: 1.3rem;
+}
+
+#contact-image-container {
+  position: relative;
+  bottom: 6px;
+  display: inline-block;
 }
 
 /*Contact Media Query */
@@ -782,6 +732,13 @@ section:nth-child(2n) {
 
   #my-details {
     font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #my-details {
+    font-size: 0.8rem;
   }
 }
 
@@ -790,22 +747,114 @@ section:nth-child(2n) {
   height: inherit;
   width: 85%;
   background-color: #34568b;
+
+  -webkit-animation-name: slidingEffect85;
+
+  animation-name: slidingEffect85;
+  -webkit-animation-duration: 4s;
+  animation-duration: 2s;
 }
 
 .ninety-percent {
   height: inherit;
   width: 90%;
   background-color: rgb(84, 122, 27);
+  -webkit-animation-name: slidingEffect90;
+  animation-name: slidingEffect90;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 .sixty-five-percent {
   height: inherit;
   width: 65%;
   background-color: #8d6e63;
+  -webkit-animation-name: slidingEffect65;
+  animation-name: slidingEffect65;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 .seventy-percent {
   height: inherit;
   width: 70%;
   background-color: #a7543b;
+  -webkit-animation-name: slidingEffect70;
+  animation-name: slidingEffect70;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/*Animations */
+
+@-webkit-keyframes slidingEffect85 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes slidingEffect85 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+@-webkit-keyframes slidingEffect90 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes slidingEffect90 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes slidingEffect65 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+@keyframes slidingEffect65 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+@-webkit-keyframes slidingEffect70 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes slidingEffect70 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
 }
