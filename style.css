@@ -238,6 +238,7 @@ section:nth-child(2n) {
 }
 
 /* About Section */
+
 #profile-photo {
   height: 15rem;
   width: 15rem;
@@ -754,7 +755,7 @@ section:nth-child(2n) {
 
   -webkit-animation-duration: 4s;
 
-          animation-duration: 4s;
+  animation-duration: 4s;
 }
 
 .ninety-percent {
@@ -766,7 +767,7 @@ section:nth-child(2n) {
 
   -webkit-animation-duration: 4s;
 
-          animation-duration: 4s;
+  animation-duration: 4s;
 }
 
 .sixty-five-percent {
@@ -778,7 +779,7 @@ section:nth-child(2n) {
 
   -webkit-animation-duration: 4s;
 
-          animation-duration: 4s;
+  animation-duration: 4s;
 }
 
 .seventy-percent {
@@ -790,7 +791,7 @@ section:nth-child(2n) {
 
   -webkit-animation-duration: 4s;
 
-          animation-duration: 4s;
+  animation-duration: 4s;
 }
 
 /*Animations */
