@@ -27,11 +27,11 @@ function handleResize()
   }
 }
 
-function goToTarget(e)
+function goToTarget(event)
 {
-  let targetId = sectionY[e.currentTarget.id];
-  let target = document.getElementById(targetId).getBoundingClientRect().top - 100;
+  let targetId = sectionY[event.currentTarget.id];
   let start = window.scrollY;
+  let target = document.getElementById(targetId).getBoundingClientRect().top - 100 ;
   console.log(targetId,start,target);
   // console.log(e.currentTarget.id,target,start);
   let targetTemporary = target;
