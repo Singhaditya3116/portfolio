@@ -2,16 +2,15 @@ var hamburger = document.getElementsByClassName("menu");
 var menu = undefined;
 var isCollapse = true;
 var education = document.getElementById("experience-link");
-const sectionY ={
-  "about-link":400,
-  "skills-link":950,
-  "experience-link":1300,
-  "education-link":1700,
-  "portfolio-link":2500,
-  "contact-link":2550
-}
-
 var horizontalList = document.querySelectorAll(".horizontal-list li");
+const sectionY ={
+  "about-link":'about',
+  "skills-link":'skills-section',
+  "experience-link":"experience",
+  "education-link":"education",
+  "portfolio-link":"portfolio",
+  "contact-link":"contact"
+}
 
 function onClickHamburger(){
 
@@ -21,42 +20,46 @@ function onClickHamburger(){
 
 function handleResize()
 {
-  if(window.innerWidth <= 768)
+  if(window.innerWidth <= 768)  // To manage the hamburger appropriate behavior when the screen resolution changes.
   {
     document.getElementsByTagName("nav")[0].classList.remove("cross");
+    hamburger[0].classList.remove("cross");
   }
 }
 
 function goToTarget(e)
 {
-  let temp = e.currentTarget.id;
-  let target = sectionY[temp];
+  let targetId = sectionY[e.currentTarget.id];
+  let target = document.getElementById(targetId).getBoundingClientRect().top - 100;
   let start = window.scrollY;
-
+  console.log(targetId,start,target);
   // console.log(e.currentTarget.id,target,start);
-  if(target-start >=0 )
+  let targetTemporary = target;
+  if(targetTemporary >=0)
   {
     let scrollInterval = setInterval(()=>{
       // console.log(start,target);
-      if(start >= target)
+      if(targetTemporary<=0)
       {
         clearInterval(scrollInterval);
       }
-      start+=50;
-      window.scrollBy(0,50);
-    },30)
+      start+=10;
+      targetTemporary-=10;
+      window.scrollBy(0,10);
+    },0.1)
   }
   else
   {
+    let currentYIndex = 0;
     let scrollInterval = setInterval(()=>{
       // console.log(start,target);
-      if(start <= target)
+      if(currentYIndex<=targetTemporary)
       {
         clearInterval(scrollInterval);
       }
-      start-=50;
-      window.scrollBy(0,-50);
-    },30)
+      currentYIndex-=10;
+      window.scrollBy(0,-10);
+    },0.1)
   }
 }
 
