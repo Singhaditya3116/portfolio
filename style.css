@@ -301,13 +301,16 @@ section:nth-child(2n) {
   /* border: 2px solid black; */
   box-shadow: 0.5px 0.5px 2px 1px black;
   background-color: lightgrey;
-  border-radius: 0.8rem;
+  border-radius: 0.6rem;
   margin: 1%;
 }
 
 .skill-percentage {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.3rem;
+  height: 100%;
 }
 .skill-name {
   width: 30%;
@@ -743,127 +746,20 @@ section:nth-child(2n) {
   }
 }
 
-/* Percentage */
+/* Percentage wise Colours*/
+
 .eighty-five-percent {
-  height: inherit;
-  width: 85%;
   background-color: #34568b;
-
-  -webkit-animation-name: slidingEffect85;
-
-  animation-name: slidingEffect85;
-
-  -webkit-animation-duration: 4s;
-
-  animation-duration: 4s;
 }
 
 .ninety-percent {
-  height: inherit;
-  width: 90%;
   background-color: rgb(84, 122, 27);
-  -webkit-animation-name: slidingEffect90;
-  animation-name: slidingEffect90;
-
-  -webkit-animation-duration: 4s;
-
-  animation-duration: 4s;
 }
 
 .sixty-five-percent {
-  height: inherit;
-  width: 65%;
   background-color: #8d6e63;
-  -webkit-animation-name: slidingEffect65;
-  animation-name: slidingEffect65;
-
-  -webkit-animation-duration: 4s;
-
-  animation-duration: 4s;
 }
 
 .seventy-percent {
-  height: inherit;
-  width: 70%;
   background-color: #a7543b;
-  -webkit-animation-name: slidingEffect70;
-  animation-name: slidingEffect70;
-
-  -webkit-animation-duration: 4s;
-
-  animation-duration: 4s;
-}
-
-/*Animations */
-
-@-webkit-keyframes slidingEffect85 {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 85%;
-  }
-}
-
-@keyframes slidingEffect85 {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 85%;
-  }
-}
-
-@-webkit-keyframes slidingEffect90 {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 90%;
-  }
-}
-
-@keyframes slidingEffect90 {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 90%;
-  }
-}
-
-@-webkit-keyframes slidingEffect65 {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 65%;
-  }
-}
-
-@keyframes slidingEffect65 {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 65%;
-  }
-}
-
-@-webkit-keyframes slidingEffect70 {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 70%;
-  }
-}
-
-@keyframes slidingEffect70 {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 70%;
-  }
 }

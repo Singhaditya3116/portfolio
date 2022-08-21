@@ -69,3 +69,46 @@ window.addEventListener('resize',handleResize);
 horizontalList.forEach((list) => {
   list.addEventListener('click',goToTarget);
 }) 
+
+//  Skill Bar Animation
+var skillBars = document.querySelectorAll(".skill-percentage");
+var skillContainer = document.querySelector(".all-skills");
+//console.log(skillContainer);
+var animationDone = false;
+
+function initialSkillWidth(){
+  for(let i=0;i<skillBars.length;i++){
+    skillBars[i].style.width = 0 + "%";
+  }
+}
+
+function fillSkillWidth(){
+  for(let i=0;i<skillBars.length;i++){
+    //console.log(i);
+    let widthCountBuffer=0;
+    let interval = setInterval(function(){
+      if(widthCountBuffer >= skillBars[i].getAttribute("data-bar-width")){
+        clearInterval(interval);
+      }
+      skillBars[i].style.width=widthCountBuffer+"%";
+      widthCountBuffer+=1;
+    },10)
+  }
+}
+
+
+function setAnimation(){
+  if(skillContainer.getBoundingClientRect().top > window.innerHeight) //to do the animation again if scroll goes at top and comes to skill section
+  {
+    animationDone=false;
+  }
+  if(skillContainer.getBoundingClientRect().top < window.innerHeight && animationDone == false){  //if skill is visible then only do the animation
+      //console.log(true);
+      initialSkillWidth();
+      fillSkillWidth();
+      animationDone=true;
+  }
+}
+
+
+window.addEventListener("scroll",setAnimation);
