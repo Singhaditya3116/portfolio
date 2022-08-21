@@ -10,10 +10,11 @@ body {
   margin: 0px;
   /* font-size: 30px; */
 }
+
 /* Navigation List */
 
 nav {
-  background-color: black;
+  background-color: #18181b;
   height: 3rem;
   width: 100%;
   position: fixed;
@@ -87,7 +88,7 @@ nav {
 @media screen and (max-width: 768px) {
   .cross {
     height: 20rem;
-    opacity: 0.8;
+    opacity: 1;
   }
 
   .horizontal-list {
@@ -278,8 +279,10 @@ section:nth-child(2n) {
 /* Skills Section */
 
 .section-logo {
-  height: 2.1rem;
-  width: 2.1rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  position: relative;
+  top: -5px;
 }
 
 .all-skills {
@@ -410,8 +413,9 @@ section:nth-child(2n) {
 }
 
 .timeline-traveller img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  rotate: 90deg;
 }
 
 .designation,
@@ -444,6 +448,11 @@ section:nth-child(2n) {
 .company-logo img {
   width: 50px;
   height: 40px;
+  border-radius: 25px;
+}
+
+#contact-logo {
+  top: -2px;
 }
 
 @media screen and (max-width: 1580px) {
@@ -703,11 +712,6 @@ section:nth-child(2n) {
   padding-bottom: 2.5rem;
 }
 
-#contact-logo {
-  height: 1.3rem;
-  width: 1.3rem;
-}
-
 #contact-image-container {
   position: relative;
   bottom: 6px;
@@ -746,20 +750,30 @@ section:nth-child(2n) {
   }
 }
 
+/*----Dark Mode----*/
+.darkmode {
+  background-color: black;
+  color: white;
+}
+
+.darkmode section {
+  background-color: black;
+}
+
 /* Percentage wise Colours*/
 
 .eighty-five-percent {
-  background-color: #34568b;
+  background-color: #204a9c;
 }
 
 .ninety-percent {
-  background-color: rgb(84, 122, 27);
+  background-color: #15803d;
 }
 
 .sixty-five-percent {
-  background-color: #8d6e63;
+  background-color: #8d6a84;
 }
 
 .seventy-percent {
-  background-color: #a7543b;
+  background-color: #f97316;
 }

@@ -1,7 +1,6 @@
 var hamburger = document.getElementsByClassName("menu");
 var menu = undefined;
 var isCollapse = true;
-var education = document.getElementById("experience-link");
 var horizontalList = document.querySelectorAll(".horizontal-list li");
 const sectionY ={
   "about-link":'about',
@@ -29,6 +28,10 @@ function handleResize()
 
 function goToTarget(event)
 {
+  if(window.innerWidth < 768) //clicking on menu item should do the changes and disappear
+  {
+     onClickHamburger();
+  }
   let targetId = sectionY[event.currentTarget.id];
   let start = window.scrollY;
   let target = document.getElementById(targetId).getBoundingClientRect().top - 100 ;
@@ -65,7 +68,6 @@ function goToTarget(event)
 
 hamburger[0].addEventListener('click',onClickHamburger);
 window.addEventListener('resize',handleResize);
-// education.addEventListener('click',goToTarget);
 horizontalList.forEach((list) => {
   list.addEventListener('click',goToTarget);
 }) 
