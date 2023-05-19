@@ -669,9 +669,12 @@ section:nth-child(2n) {
 }
 
 .work:hover {
-  position: relative;
+  /* position: relative;
   width: 11.5rem;
-  height: 13.5rem;
+  height: 13.5rem; */
+  transform: scale(1.05);
+  border-radius: 7px;
+  transition: all 0.3s ease-in;
 }
 
 .work-view {
