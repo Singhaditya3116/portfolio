@@ -21,15 +21,21 @@
         <div class="container">
           <!-- Navigation List -->
           <nav>
-            <ul class="horizontal-list">
-              <li><a> Home </a></li>
-              <li id="about-link"><a> About </a></li>
-              <li id="skills-link"><a> Skills </a></li>
-              <li id="experience-link"><a>Experience </a></li>
-              <li id="education-link"><a>Education </a></li>
-              <li id="portfolio-link"><a>Portfolio </a></li>
-              <li id="contact-link"><a>Contact </a></li>
-            </ul>
+            <div class="wrapper">
+              <div class="left-wrap">SinghAditya</div>
+              <!-- <div class="right-wrap"> -->
+                <ul class="horizontal-list">
+                  <!-- <li><a> Home </a></li> -->
+                  <!-- <li id="about-link"><a> About </a></li> -->
+                  <li id="skills-link"><a> Skills </a></li>
+                  <li id="experience-link"><a>Experience </a></li>
+                  <li id="education-link"><a>Education </a></li>
+                  <li id="portfolio-link"><a>Projects </a></li>
+                  <!-- <li id="contact-link"><a>Contact </a></li> -->
+                </ul>
+              <!-- </div> -->
+            </div>
+
             <!-- Hamburger Icon -->
             <div class="menu">
               <div id="menu-item1" class="menu-item"></div>
@@ -703,7 +709,7 @@
           </div>
           <div class="card-wrapper">
             <ul>
-              <li>
+              <!-- <li>
                 <div class="card">
                   <div class="img-wrapper">
                     <img src="./img/portfolio.png" alt="">
@@ -756,35 +762,38 @@
                     </div>
                   </div>
                 </div>
-              </li>
+              </li> -->
               <li>
                 <div class="card">
                   <div class="img-wrapper">
-                    <img src="./img/portfolio.png" alt="">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/youtube-mob.jpg">
+                      <img src="./img/youtube.jpg" alt="Flowers">
+                    </picture>
                   </div>
                   <div class="card-content">
                     <div class="upper-wrap">
                       <div class="card-title">
-                        Netlix GPT
+                        Youtube Clone
                       </div>
                       <div class="card-desc">
-                        This is a an web app which is integrated with Chatgpt to search movies and also movieDB APi to
-                        get all information related to the movie.
+                        <p>This web application is a clone of YouTube, allowing users to browse and watch videos sourced from the YouTube API.</p>
+                        <p>It features an efficient search functionality with a debounce mechanism to minimize the number of API requests, enhancing performance.</p>
+                        <p>Additionally, a nested comment feature is build, fostering a community-like experience.</p>
+                          
                       </div>
                     </div>
                     <div class="lower-wrap">
                       <div class="techstack">
                         <div class="text">TechStack :</div>
-                        <div class="skill">HTML</div>
-                        <div class="skill">CSS</div>
-                        <div class="skill">JS</div>
-                        <div class="skill">React</div>
-                        <div class="skill">Tailwind</div>
-                        <div class="skill">Zod</div>
+                        <div class="skill">React.js</div>
+                        <div class="skill">Redux</div>
+                        <div class="skill">TailwindCSS</div>
+                        <div class="skill">Firebase</div>
                       </div>
 
                       <div class="action-wrapper">
-                        <a href="#" class="live-link">
+                        <a class="live-link" href="https://youtubevanced.netlify.app/" target="_blank">
 
 
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -796,7 +805,7 @@
 
 
                         </a>
-                        <a href="" class="github-link">
+                        <a class="github-link" href="https://github.com/Singhaditya3116/youtube"  target="_blank">
 
                           <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -814,31 +823,31 @@
               <li>
                 <div class="card">
                   <div class="img-wrapper">
-                    <img src="./img/portfolio.png" alt="">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/swiggy-mob.jpg">
+                      <img src="./img/swiggy.jpg" alt="Flowers">
+                    </picture>
                   </div>
                   <div class="card-content">
                     <div class="upper-wrap">
                       <div class="card-title">
-                        Netlix GPT
+                        Swiggy Clone
                       </div>
                       <div class="card-desc">
-                        This is a an web app which is integrated with Chatgpt to search movies and also movieDB APi to
-                        get all information related to the movie.
+                        <p>This web application showcases the complete menu of a restaurant, allowing users to browse through all available products.</p>
+                        <p>Customers can easily add their selected items to a cart.</p>
                       </div>
                     </div>
                     <div class="lower-wrap">
                       <div class="techstack">
                         <div class="text">TechStack :</div>
-                        <div class="skill">HTML</div>
+                        <div class="skill">React.js</div>
+                        <div class="skill">Redux</div>
                         <div class="skill">CSS</div>
-                        <div class="skill">JS</div>
-                        <div class="skill">React</div>
-                        <div class="skill">Tailwind</div>
-                        <div class="skill">Zod</div>
                       </div>
 
                       <div class="action-wrapper">
-                        <a href="#" class="live-link">
+                        <a class="live-link" href="https://twiggy-food-order.netlify.app/" target="_blank">
 
 
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -850,7 +859,7 @@
 
 
                         </a>
-                        <a href="" class="github-link">
+                        <a class="github-link"  href="https://github.com/Singhaditya3116/Twiggy-Food-Order-App" target="_blank">
 
                           <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -868,16 +877,19 @@
               <li>
                 <div class="card">
                   <div class="img-wrapper">
-                    <img src="./img/portfolio.png" alt="">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/infinite-scroll-mob.jpg">
+                      <img src="./img/infinite-scroll.jpg" alt="Flowers">
+                    </picture>
                   </div>
                   <div class="card-content">
                     <div class="upper-wrap">
                       <div class="card-title">
-                        Netlix GPT
+                        Infinite Scroll
                       </div>
                       <div class="card-desc">
-                        This is a an web app which is integrated with Chatgpt to search movies and also movieDB APi to
-                        get all information related to the movie.
+                        <p>This project demonstrates an infinite scroll feature, where new image assets are automatically loaded and appended at the bottom of the page as the user scrolls down. </p>
+                        <p>This creates a seamless browsing experience, allowing users to explore content without interruption.</p>
                       </div>
                     </div>
                     <div class="lower-wrap">
@@ -886,13 +898,10 @@
                         <div class="skill">HTML</div>
                         <div class="skill">CSS</div>
                         <div class="skill">JS</div>
-                        <div class="skill">React</div>
-                        <div class="skill">Tailwind</div>
-                        <div class="skill">Zod</div>
                       </div>
 
                       <div class="action-wrapper">
-                        <a href="#" class="live-link">
+                        <a class="live-link" href="https://singhaditya3116.github.io/Infinite-Scroll/" target="_blank">
 
 
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -904,7 +913,7 @@
 
 
                         </a>
-                        <a href="" class="github-link">
+                        <a  class="github-link" href="https://github.com/Singhaditya3116/Infinite-Scroll" target="_blank">
 
                           <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -922,16 +931,19 @@
               <li>
                 <div class="card">
                   <div class="img-wrapper">
-                    <img src="./img/portfolio.png" alt="">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/kanban-mob.jpg">
+                      <img src="./img/kanban.jpg" alt="Flowers">
+                    </picture>
                   </div>
                   <div class="card-content">
                     <div class="upper-wrap">
                       <div class="card-title">
-                        Netlix GPT
+                        Kanban Board
                       </div>
                       <div class="card-desc">
-                        This is a an web app which is integrated with Chatgpt to search movies and also movieDB APi to
-                        get all information related to the movie.
+                        <p>A dashboard has been developed to provide a clear overview of task statuses. </p>
+                        <p>This visual tool allows users to easily track the progress of tasks through different stages, enhancing project management and collaboration</p>
                       </div>
                     </div>
                     <div class="lower-wrap">
@@ -940,13 +952,10 @@
                         <div class="skill">HTML</div>
                         <div class="skill">CSS</div>
                         <div class="skill">JS</div>
-                        <div class="skill">React</div>
-                        <div class="skill">Tailwind</div>
-                        <div class="skill">Zod</div>
                       </div>
 
                       <div class="action-wrapper">
-                        <a href="#" class="live-link">
+                        <a class="live-link" href="https://singhaditya3116.github.io/Kanban-Board/"  target="_blank">
 
 
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -958,7 +967,332 @@
 
 
                         </a>
-                        <a href="" class="github-link">
+                        <a class="github-link" href="https://github.com/Singhaditya3116/Kanban-Board"  target="_blank">
+
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M12 0.666656C5.37 0.666656 0 6.17614 0 12.9712C0 18.4087 3.438 23.0197 8.205 24.6454C8.805 24.7613 9.025 24.3804 9.025 24.0538C9.025 23.7616 9.015 22.9874 9.01 21.9616C5.672 22.7035 4.968 20.3109 4.968 20.3109C4.422 18.8907 3.633 18.5109 3.633 18.5109C2.546 17.7481 3.717 17.7638 3.717 17.7638C4.922 17.8494 5.555 19.0316 5.555 19.0316C6.625 20.913 8.364 20.3693 9.05 20.0552C9.158 19.2591 9.467 18.7175 9.81 18.4097C7.145 18.1019 4.344 17.0438 4.344 12.3294C4.344 10.9865 4.809 9.88878 5.579 9.02792C5.444 8.71697 5.039 7.46586 5.684 5.77128C5.684 5.77128 6.689 5.44154 8.984 7.03282C9.944 6.75943 10.964 6.62378 11.984 6.61752C13.004 6.62378 14.024 6.75943 14.984 7.03282C17.264 5.44154 18.269 5.77128 18.269 5.77128C18.914 7.46586 18.509 8.71697 18.389 9.02792C19.154 9.88878 19.619 10.9865 19.619 12.3294C19.619 17.0563 16.814 18.0967 14.144 18.3993C14.564 18.7686 14.954 19.5231 14.954 20.6761C14.954 22.3227 14.939 23.6458 14.939 24.0454C14.939 24.3679 15.149 24.7529 15.764 24.6298C20.565 23.0145 24 18.4003 24 12.9712C24 6.17614 18.627 0.666656 12 0.666656Z"
+                              fill="#FFF" />
+                          </svg>
+
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="img-wrapper">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/music-mob.jpg">
+                      <img src="./img/music.jpg" alt="Flowers">
+                    </picture>
+                  </div>
+                  <div class="card-content">
+                    <div class="upper-wrap">
+                      <div class="card-title">
+                        Music Player
+                      </div>
+                      <div class="card-desc">
+                        <p>A music player has been developed with essential features such as play, pause, and skip to the next track.</p>
+                        <p>Users can also seek to specific timestamps within a song, enhancing their listening experience and allowing for greater control over playback.</p>
+                      </div>
+                    </div>
+                    <div class="lower-wrap">
+                      <div class="techstack">
+                        <div class="text">TechStack :</div>
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JS</div>
+                      </div>
+
+                      <div class="action-wrapper">
+                        <a class="live-link" href="https://singhaditya3116.github.io/Music-Player/"  target="_blank">
+
+
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M17.3344 24H4.00098C2.93247 24 1.92799 23.5839 1.17252 22.8283C0.417046 22.0728 0.000976562 21.0683 0.000976562 19.9999V6.66663C0.000976562 5.59817 0.417093 4.5937 1.17257 3.83823C1.92804 3.08277 2.93251 2.66665 4.00103 2.66665H9.33439C10.0708 2.66665 10.6677 3.26357 10.6677 3.99999C10.6677 4.73641 10.0708 5.33333 9.33439 5.33333H4.00098C3.64481 5.33333 3.31002 5.47204 3.05822 5.72383C2.80643 5.97562 2.66768 6.31046 2.66768 6.66663V19.9999C2.66768 20.3561 2.80638 20.6909 3.05822 20.9428C3.31002 21.1945 3.64481 21.3333 4.00098 21.3333H17.3344C17.6905 21.3333 18.0253 21.1946 18.2772 20.9427C18.529 20.6909 18.6677 20.3561 18.6677 19.9999V14.6666C18.6677 13.9302 19.2646 13.3333 20.0011 13.3333C20.7375 13.3333 21.3345 13.9303 21.3345 14.6666V19.9999C21.3345 21.0684 20.9183 22.0728 20.1628 22.8284C19.4073 23.5839 18.4028 24 17.3344 24ZM9.33439 15.9999C8.99312 15.9999 8.6519 15.8698 8.39158 15.6094C7.8709 15.0888 7.8709 14.2445 8.39158 13.7238L19.4488 2.66665H14.6677C13.9313 2.66665 13.3344 2.06973 13.3344 1.33331C13.3344 0.596893 13.9313 -2.9637e-05 14.6677 -2.9637e-05H22.6678C23.016 -0.000430083 23.3504 0.135765 23.5992 0.379288L23.5993 0.379381L23.6019 0.38199L23.6027 0.382735L23.6047 0.384784L23.6061 0.386135L23.6076 0.387625L23.6105 0.390513L23.6134 0.393401L23.6148 0.394891L23.6162 0.396242C23.6172 0.397124 23.6181 0.398073 23.619 0.399083L23.6216 0.401738L23.6217 0.401831C23.8652 0.650679 24.0013 0.985102 24.001 1.33326V9.33326C24.001 10.0697 23.404 10.6666 22.6676 10.6666C21.9312 10.6666 21.3343 10.0697 21.3343 9.33326V4.5523L10.277 15.6095C10.0168 15.8698 9.67561 15.9999 9.33439 15.9999Z"
+                              fill="#FFF" />
+                          </svg>
+
+
+                        </a>
+                        <a class="github-link" href="https://github.com/Singhaditya3116/Music-Player"  target="_blank">
+
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M12 0.666656C5.37 0.666656 0 6.17614 0 12.9712C0 18.4087 3.438 23.0197 8.205 24.6454C8.805 24.7613 9.025 24.3804 9.025 24.0538C9.025 23.7616 9.015 22.9874 9.01 21.9616C5.672 22.7035 4.968 20.3109 4.968 20.3109C4.422 18.8907 3.633 18.5109 3.633 18.5109C2.546 17.7481 3.717 17.7638 3.717 17.7638C4.922 17.8494 5.555 19.0316 5.555 19.0316C6.625 20.913 8.364 20.3693 9.05 20.0552C9.158 19.2591 9.467 18.7175 9.81 18.4097C7.145 18.1019 4.344 17.0438 4.344 12.3294C4.344 10.9865 4.809 9.88878 5.579 9.02792C5.444 8.71697 5.039 7.46586 5.684 5.77128C5.684 5.77128 6.689 5.44154 8.984 7.03282C9.944 6.75943 10.964 6.62378 11.984 6.61752C13.004 6.62378 14.024 6.75943 14.984 7.03282C17.264 5.44154 18.269 5.77128 18.269 5.77128C18.914 7.46586 18.509 8.71697 18.389 9.02792C19.154 9.88878 19.619 10.9865 19.619 12.3294C19.619 17.0563 16.814 18.0967 14.144 18.3993C14.564 18.7686 14.954 19.5231 14.954 20.6761C14.954 22.3227 14.939 23.6458 14.939 24.0454C14.939 24.3679 15.149 24.7529 15.764 24.6298C20.565 23.0145 24 18.4003 24 12.9712C24 6.17614 18.627 0.666656 12 0.666656Z"
+                              fill="#FFF" />
+                          </svg>
+
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="img-wrapper">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/video-mob.jpg">
+                      <img src="./img/video.jpg" alt="Flowers">
+                    </picture>
+                  </div>
+                  <div class="card-content">
+                    <div class="upper-wrap">
+                      <div class="card-title">
+                        Video Player
+                      </div>
+                      <div class="card-desc">
+                        <p>A video player has been developed with features that allow users to start and stop playback, navigate to specific timestamps within the video, and adjust playback speed.</p>
+                      </div>
+                    </div>
+                    <div class="lower-wrap">
+                      <div class="techstack">
+                        <div class="text">TechStack :</div>
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JS</div>
+                      </div>
+
+                      <div class="action-wrapper">
+                        <a class="live-link" href="https://singhaditya3116.github.io/Video-Player/"  target="_blank">
+
+
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M17.3344 24H4.00098C2.93247 24 1.92799 23.5839 1.17252 22.8283C0.417046 22.0728 0.000976562 21.0683 0.000976562 19.9999V6.66663C0.000976562 5.59817 0.417093 4.5937 1.17257 3.83823C1.92804 3.08277 2.93251 2.66665 4.00103 2.66665H9.33439C10.0708 2.66665 10.6677 3.26357 10.6677 3.99999C10.6677 4.73641 10.0708 5.33333 9.33439 5.33333H4.00098C3.64481 5.33333 3.31002 5.47204 3.05822 5.72383C2.80643 5.97562 2.66768 6.31046 2.66768 6.66663V19.9999C2.66768 20.3561 2.80638 20.6909 3.05822 20.9428C3.31002 21.1945 3.64481 21.3333 4.00098 21.3333H17.3344C17.6905 21.3333 18.0253 21.1946 18.2772 20.9427C18.529 20.6909 18.6677 20.3561 18.6677 19.9999V14.6666C18.6677 13.9302 19.2646 13.3333 20.0011 13.3333C20.7375 13.3333 21.3345 13.9303 21.3345 14.6666V19.9999C21.3345 21.0684 20.9183 22.0728 20.1628 22.8284C19.4073 23.5839 18.4028 24 17.3344 24ZM9.33439 15.9999C8.99312 15.9999 8.6519 15.8698 8.39158 15.6094C7.8709 15.0888 7.8709 14.2445 8.39158 13.7238L19.4488 2.66665H14.6677C13.9313 2.66665 13.3344 2.06973 13.3344 1.33331C13.3344 0.596893 13.9313 -2.9637e-05 14.6677 -2.9637e-05H22.6678C23.016 -0.000430083 23.3504 0.135765 23.5992 0.379288L23.5993 0.379381L23.6019 0.38199L23.6027 0.382735L23.6047 0.384784L23.6061 0.386135L23.6076 0.387625L23.6105 0.390513L23.6134 0.393401L23.6148 0.394891L23.6162 0.396242C23.6172 0.397124 23.6181 0.398073 23.619 0.399083L23.6216 0.401738L23.6217 0.401831C23.8652 0.650679 24.0013 0.985102 24.001 1.33326V9.33326C24.001 10.0697 23.404 10.6666 22.6676 10.6666C21.9312 10.6666 21.3343 10.0697 21.3343 9.33326V4.5523L10.277 15.6095C10.0168 15.8698 9.67561 15.9999 9.33439 15.9999Z"
+                              fill="#FFF" />
+                          </svg>
+
+
+                        </a>
+                        <a class="github-link" href="https://github.com/Singhaditya3116/Video-Player"  target="_blank">
+
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M12 0.666656C5.37 0.666656 0 6.17614 0 12.9712C0 18.4087 3.438 23.0197 8.205 24.6454C8.805 24.7613 9.025 24.3804 9.025 24.0538C9.025 23.7616 9.015 22.9874 9.01 21.9616C5.672 22.7035 4.968 20.3109 4.968 20.3109C4.422 18.8907 3.633 18.5109 3.633 18.5109C2.546 17.7481 3.717 17.7638 3.717 17.7638C4.922 17.8494 5.555 19.0316 5.555 19.0316C6.625 20.913 8.364 20.3693 9.05 20.0552C9.158 19.2591 9.467 18.7175 9.81 18.4097C7.145 18.1019 4.344 17.0438 4.344 12.3294C4.344 10.9865 4.809 9.88878 5.579 9.02792C5.444 8.71697 5.039 7.46586 5.684 5.77128C5.684 5.77128 6.689 5.44154 8.984 7.03282C9.944 6.75943 10.964 6.62378 11.984 6.61752C13.004 6.62378 14.024 6.75943 14.984 7.03282C17.264 5.44154 18.269 5.77128 18.269 5.77128C18.914 7.46586 18.509 8.71697 18.389 9.02792C19.154 9.88878 19.619 10.9865 19.619 12.3294C19.619 17.0563 16.814 18.0967 14.144 18.3993C14.564 18.7686 14.954 19.5231 14.954 20.6761C14.954 22.3227 14.939 23.6458 14.939 24.0454C14.939 24.3679 15.149 24.7529 15.764 24.6298C20.565 23.0145 24 18.4003 24 12.9712C24 6.17614 18.627 0.666656 12 0.666656Z"
+                              fill="#FFF" />
+                          </svg>
+
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="img-wrapper">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/paint-mob.jpg">
+                      <img src="./img/paint.jpg" alt="Flowers">
+                    </picture>
+                  </div>
+                  <div class="card-content">
+                    <div class="upper-wrap">
+                      <div class="card-title">
+                        Paint
+                      </div>
+                      <div class="card-desc">
+                         
+                        <p>A paint clone has been created that allows users to draw and write freely on the screen.</p>
+                        <p>Users can save their creations in local storage, enabling them to access and retrieve their artwork at any time.</p>
+                      </div>
+                    </div>
+                    <div class="lower-wrap">
+                      <div class="techstack">
+                        <div class="text">TechStack :</div>
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JS</div>
+                      </div>
+
+                      <div class="action-wrapper">
+                        <a class="live-link" href="https://singhaditya3116.github.io/Paint-Clone/"  target="_blank">
+
+
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M17.3344 24H4.00098C2.93247 24 1.92799 23.5839 1.17252 22.8283C0.417046 22.0728 0.000976562 21.0683 0.000976562 19.9999V6.66663C0.000976562 5.59817 0.417093 4.5937 1.17257 3.83823C1.92804 3.08277 2.93251 2.66665 4.00103 2.66665H9.33439C10.0708 2.66665 10.6677 3.26357 10.6677 3.99999C10.6677 4.73641 10.0708 5.33333 9.33439 5.33333H4.00098C3.64481 5.33333 3.31002 5.47204 3.05822 5.72383C2.80643 5.97562 2.66768 6.31046 2.66768 6.66663V19.9999C2.66768 20.3561 2.80638 20.6909 3.05822 20.9428C3.31002 21.1945 3.64481 21.3333 4.00098 21.3333H17.3344C17.6905 21.3333 18.0253 21.1946 18.2772 20.9427C18.529 20.6909 18.6677 20.3561 18.6677 19.9999V14.6666C18.6677 13.9302 19.2646 13.3333 20.0011 13.3333C20.7375 13.3333 21.3345 13.9303 21.3345 14.6666V19.9999C21.3345 21.0684 20.9183 22.0728 20.1628 22.8284C19.4073 23.5839 18.4028 24 17.3344 24ZM9.33439 15.9999C8.99312 15.9999 8.6519 15.8698 8.39158 15.6094C7.8709 15.0888 7.8709 14.2445 8.39158 13.7238L19.4488 2.66665H14.6677C13.9313 2.66665 13.3344 2.06973 13.3344 1.33331C13.3344 0.596893 13.9313 -2.9637e-05 14.6677 -2.9637e-05H22.6678C23.016 -0.000430083 23.3504 0.135765 23.5992 0.379288L23.5993 0.379381L23.6019 0.38199L23.6027 0.382735L23.6047 0.384784L23.6061 0.386135L23.6076 0.387625L23.6105 0.390513L23.6134 0.393401L23.6148 0.394891L23.6162 0.396242C23.6172 0.397124 23.6181 0.398073 23.619 0.399083L23.6216 0.401738L23.6217 0.401831C23.8652 0.650679 24.0013 0.985102 24.001 1.33326V9.33326C24.001 10.0697 23.404 10.6666 22.6676 10.6666C21.9312 10.6666 21.3343 10.0697 21.3343 9.33326V4.5523L10.277 15.6095C10.0168 15.8698 9.67561 15.9999 9.33439 15.9999Z"
+                              fill="#FFF" />
+                          </svg>
+
+
+                        </a>
+                        <a class="github-link" href="https://github.com/Singhaditya3116/Paint-Clone"  target="_blank">
+
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M12 0.666656C5.37 0.666656 0 6.17614 0 12.9712C0 18.4087 3.438 23.0197 8.205 24.6454C8.805 24.7613 9.025 24.3804 9.025 24.0538C9.025 23.7616 9.015 22.9874 9.01 21.9616C5.672 22.7035 4.968 20.3109 4.968 20.3109C4.422 18.8907 3.633 18.5109 3.633 18.5109C2.546 17.7481 3.717 17.7638 3.717 17.7638C4.922 17.8494 5.555 19.0316 5.555 19.0316C6.625 20.913 8.364 20.3693 9.05 20.0552C9.158 19.2591 9.467 18.7175 9.81 18.4097C7.145 18.1019 4.344 17.0438 4.344 12.3294C4.344 10.9865 4.809 9.88878 5.579 9.02792C5.444 8.71697 5.039 7.46586 5.684 5.77128C5.684 5.77128 6.689 5.44154 8.984 7.03282C9.944 6.75943 10.964 6.62378 11.984 6.61752C13.004 6.62378 14.024 6.75943 14.984 7.03282C17.264 5.44154 18.269 5.77128 18.269 5.77128C18.914 7.46586 18.509 8.71697 18.389 9.02792C19.154 9.88878 19.619 10.9865 19.619 12.3294C19.619 17.0563 16.814 18.0967 14.144 18.3993C14.564 18.7686 14.954 19.5231 14.954 20.6761C14.954 22.3227 14.939 23.6458 14.939 24.0454C14.939 24.3679 15.149 24.7529 15.764 24.6298C20.565 23.0145 24 18.4003 24 12.9712C24 6.17614 18.627 0.666656 12 0.666656Z"
+                              fill="#FFF" />
+                          </svg>
+
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="img-wrapper">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/xzero-mob.jpg">
+                      <img src="./img/xzero.jpg" alt="Flowers">
+                    </picture>
+                  </div>
+                  <div class="card-content">
+                    <div class="upper-wrap">
+                      <div class="card-title">
+                        Tic Tac Toe
+                      </div>
+                      <div class="card-desc">
+                        <p>A Tic-Tac-Toe game was built using JavaScript to simulate real-time gameplay, where players take turns marking Xs and Os on a 3x3 grid. </p>
+                        <p>The game checks for winning conditions, declares the result, and allows users to play multiple rounds</p>
+                      </div>
+                    </div>
+                    <div class="lower-wrap">
+                      <div class="techstack">
+                        <div class="text">TechStack :</div>
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JS</div>
+                      </div>
+
+                      <div class="action-wrapper">
+                        <a class="live-link" href="https://singhaditya3116.github.io/Tic-Tac-Toe/"  target="_blank">
+
+
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M17.3344 24H4.00098C2.93247 24 1.92799 23.5839 1.17252 22.8283C0.417046 22.0728 0.000976562 21.0683 0.000976562 19.9999V6.66663C0.000976562 5.59817 0.417093 4.5937 1.17257 3.83823C1.92804 3.08277 2.93251 2.66665 4.00103 2.66665H9.33439C10.0708 2.66665 10.6677 3.26357 10.6677 3.99999C10.6677 4.73641 10.0708 5.33333 9.33439 5.33333H4.00098C3.64481 5.33333 3.31002 5.47204 3.05822 5.72383C2.80643 5.97562 2.66768 6.31046 2.66768 6.66663V19.9999C2.66768 20.3561 2.80638 20.6909 3.05822 20.9428C3.31002 21.1945 3.64481 21.3333 4.00098 21.3333H17.3344C17.6905 21.3333 18.0253 21.1946 18.2772 20.9427C18.529 20.6909 18.6677 20.3561 18.6677 19.9999V14.6666C18.6677 13.9302 19.2646 13.3333 20.0011 13.3333C20.7375 13.3333 21.3345 13.9303 21.3345 14.6666V19.9999C21.3345 21.0684 20.9183 22.0728 20.1628 22.8284C19.4073 23.5839 18.4028 24 17.3344 24ZM9.33439 15.9999C8.99312 15.9999 8.6519 15.8698 8.39158 15.6094C7.8709 15.0888 7.8709 14.2445 8.39158 13.7238L19.4488 2.66665H14.6677C13.9313 2.66665 13.3344 2.06973 13.3344 1.33331C13.3344 0.596893 13.9313 -2.9637e-05 14.6677 -2.9637e-05H22.6678C23.016 -0.000430083 23.3504 0.135765 23.5992 0.379288L23.5993 0.379381L23.6019 0.38199L23.6027 0.382735L23.6047 0.384784L23.6061 0.386135L23.6076 0.387625L23.6105 0.390513L23.6134 0.393401L23.6148 0.394891L23.6162 0.396242C23.6172 0.397124 23.6181 0.398073 23.619 0.399083L23.6216 0.401738L23.6217 0.401831C23.8652 0.650679 24.0013 0.985102 24.001 1.33326V9.33326C24.001 10.0697 23.404 10.6666 22.6676 10.6666C21.9312 10.6666 21.3343 10.0697 21.3343 9.33326V4.5523L10.277 15.6095C10.0168 15.8698 9.67561 15.9999 9.33439 15.9999Z"
+                              fill="#FFF" />
+                          </svg>
+
+
+                        </a>
+                        <a class="github-link" href="https://github.com/Singhaditya3116/Tic-Tac-Toe"  target="_blank">
+
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M12 0.666656C5.37 0.666656 0 6.17614 0 12.9712C0 18.4087 3.438 23.0197 8.205 24.6454C8.805 24.7613 9.025 24.3804 9.025 24.0538C9.025 23.7616 9.015 22.9874 9.01 21.9616C5.672 22.7035 4.968 20.3109 4.968 20.3109C4.422 18.8907 3.633 18.5109 3.633 18.5109C2.546 17.7481 3.717 17.7638 3.717 17.7638C4.922 17.8494 5.555 19.0316 5.555 19.0316C6.625 20.913 8.364 20.3693 9.05 20.0552C9.158 19.2591 9.467 18.7175 9.81 18.4097C7.145 18.1019 4.344 17.0438 4.344 12.3294C4.344 10.9865 4.809 9.88878 5.579 9.02792C5.444 8.71697 5.039 7.46586 5.684 5.77128C5.684 5.77128 6.689 5.44154 8.984 7.03282C9.944 6.75943 10.964 6.62378 11.984 6.61752C13.004 6.62378 14.024 6.75943 14.984 7.03282C17.264 5.44154 18.269 5.77128 18.269 5.77128C18.914 7.46586 18.509 8.71697 18.389 9.02792C19.154 9.88878 19.619 10.9865 19.619 12.3294C19.619 17.0563 16.814 18.0967 14.144 18.3993C14.564 18.7686 14.954 19.5231 14.954 20.6761C14.954 22.3227 14.939 23.6458 14.939 24.0454C14.939 24.3679 15.149 24.7529 15.764 24.6298C20.565 23.0145 24 18.4003 24 12.9712C24 6.17614 18.627 0.666656 12 0.666656Z"
+                              fill="#FFF" />
+                          </svg>
+
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="img-wrapper">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/calculator-mob.jpg">
+                      <img src="./img/calculator.jpg" alt="Flowers">
+                    </picture>
+                  </div>
+                  <div class="card-content">
+                    <div class="upper-wrap">
+                      <div class="card-title">
+                        Calculator
+                      </div>
+                      <div class="card-desc">
+                        <p>A calculator was built using JavaScript to implement basic functions such as addition, subtraction, multiplication, and division.</p>
+                        <p>The interface provides real-time calculations and supports multiple consecutive operations.</p>
+                      </div>
+                    </div>
+                    <div class="lower-wrap">
+                      <div class="techstack">
+                        <div class="text">TechStack :</div>
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JS</div>
+                      </div>
+
+                      <div class="action-wrapper">
+                        <a class="live-link" href="https://singhaditya3116.github.io/Calculator/"  target="_blank">
+
+
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M17.3344 24H4.00098C2.93247 24 1.92799 23.5839 1.17252 22.8283C0.417046 22.0728 0.000976562 21.0683 0.000976562 19.9999V6.66663C0.000976562 5.59817 0.417093 4.5937 1.17257 3.83823C1.92804 3.08277 2.93251 2.66665 4.00103 2.66665H9.33439C10.0708 2.66665 10.6677 3.26357 10.6677 3.99999C10.6677 4.73641 10.0708 5.33333 9.33439 5.33333H4.00098C3.64481 5.33333 3.31002 5.47204 3.05822 5.72383C2.80643 5.97562 2.66768 6.31046 2.66768 6.66663V19.9999C2.66768 20.3561 2.80638 20.6909 3.05822 20.9428C3.31002 21.1945 3.64481 21.3333 4.00098 21.3333H17.3344C17.6905 21.3333 18.0253 21.1946 18.2772 20.9427C18.529 20.6909 18.6677 20.3561 18.6677 19.9999V14.6666C18.6677 13.9302 19.2646 13.3333 20.0011 13.3333C20.7375 13.3333 21.3345 13.9303 21.3345 14.6666V19.9999C21.3345 21.0684 20.9183 22.0728 20.1628 22.8284C19.4073 23.5839 18.4028 24 17.3344 24ZM9.33439 15.9999C8.99312 15.9999 8.6519 15.8698 8.39158 15.6094C7.8709 15.0888 7.8709 14.2445 8.39158 13.7238L19.4488 2.66665H14.6677C13.9313 2.66665 13.3344 2.06973 13.3344 1.33331C13.3344 0.596893 13.9313 -2.9637e-05 14.6677 -2.9637e-05H22.6678C23.016 -0.000430083 23.3504 0.135765 23.5992 0.379288L23.5993 0.379381L23.6019 0.38199L23.6027 0.382735L23.6047 0.384784L23.6061 0.386135L23.6076 0.387625L23.6105 0.390513L23.6134 0.393401L23.6148 0.394891L23.6162 0.396242C23.6172 0.397124 23.6181 0.398073 23.619 0.399083L23.6216 0.401738L23.6217 0.401831C23.8652 0.650679 24.0013 0.985102 24.001 1.33326V9.33326C24.001 10.0697 23.404 10.6666 22.6676 10.6666C21.9312 10.6666 21.3343 10.0697 21.3343 9.33326V4.5523L10.277 15.6095C10.0168 15.8698 9.67561 15.9999 9.33439 15.9999Z"
+                              fill="#FFF" />
+                          </svg>
+
+
+                        </a>
+                        <a class="github-link" href="https://github.com/Singhaditya3116/Calculator"  target="_blank">
+
+                          <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M12 0.666656C5.37 0.666656 0 6.17614 0 12.9712C0 18.4087 3.438 23.0197 8.205 24.6454C8.805 24.7613 9.025 24.3804 9.025 24.0538C9.025 23.7616 9.015 22.9874 9.01 21.9616C5.672 22.7035 4.968 20.3109 4.968 20.3109C4.422 18.8907 3.633 18.5109 3.633 18.5109C2.546 17.7481 3.717 17.7638 3.717 17.7638C4.922 17.8494 5.555 19.0316 5.555 19.0316C6.625 20.913 8.364 20.3693 9.05 20.0552C9.158 19.2591 9.467 18.7175 9.81 18.4097C7.145 18.1019 4.344 17.0438 4.344 12.3294C4.344 10.9865 4.809 9.88878 5.579 9.02792C5.444 8.71697 5.039 7.46586 5.684 5.77128C5.684 5.77128 6.689 5.44154 8.984 7.03282C9.944 6.75943 10.964 6.62378 11.984 6.61752C13.004 6.62378 14.024 6.75943 14.984 7.03282C17.264 5.44154 18.269 5.77128 18.269 5.77128C18.914 7.46586 18.509 8.71697 18.389 9.02792C19.154 9.88878 19.619 10.9865 19.619 12.3294C19.619 17.0563 16.814 18.0967 14.144 18.3993C14.564 18.7686 14.954 19.5231 14.954 20.6761C14.954 22.3227 14.939 23.6458 14.939 24.0454C14.939 24.3679 15.149 24.7529 15.764 24.6298C20.565 23.0145 24 18.4003 24 12.9712C24 6.17614 18.627 0.666656 12 0.666656Z"
+                              fill="#FFF" />
+                          </svg>
+
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="card">
+                  <div class="img-wrapper">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/todo-mob.jpg">
+                      <img src="./img/todo.jpg" alt="Flowers">
+                    </picture>
+                  </div>
+                  <div class="card-content">
+                    <div class="upper-wrap">
+                      <div class="card-title">
+                        To Do App
+                      </div>
+                      <div class="card-desc">
+                        A to do app was build to manage the task
+                        <p>A to-do app was developed to help users manage tasks efficiently.</p>
+                        <p>It allows users to add, edit, mark as complete, and delete tasks, providing an organized way to track daily activities.</p>
+                      </div>
+                    </div>
+                    <div class="lower-wrap">
+                      <div class="techstack">
+                        <div class="text">TechStack :</div>
+                        <div class="skill">HTML</div>
+                        <div class="skill">CSS</div>
+                        <div class="skill">JS</div>
+                      </div>
+
+                      <div class="action-wrapper">
+                        <a class="live-link" href="https://singhaditya3116.github.io/Todo-List/"  target="_blank">
+
+
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M17.3344 24H4.00098C2.93247 24 1.92799 23.5839 1.17252 22.8283C0.417046 22.0728 0.000976562 21.0683 0.000976562 19.9999V6.66663C0.000976562 5.59817 0.417093 4.5937 1.17257 3.83823C1.92804 3.08277 2.93251 2.66665 4.00103 2.66665H9.33439C10.0708 2.66665 10.6677 3.26357 10.6677 3.99999C10.6677 4.73641 10.0708 5.33333 9.33439 5.33333H4.00098C3.64481 5.33333 3.31002 5.47204 3.05822 5.72383C2.80643 5.97562 2.66768 6.31046 2.66768 6.66663V19.9999C2.66768 20.3561 2.80638 20.6909 3.05822 20.9428C3.31002 21.1945 3.64481 21.3333 4.00098 21.3333H17.3344C17.6905 21.3333 18.0253 21.1946 18.2772 20.9427C18.529 20.6909 18.6677 20.3561 18.6677 19.9999V14.6666C18.6677 13.9302 19.2646 13.3333 20.0011 13.3333C20.7375 13.3333 21.3345 13.9303 21.3345 14.6666V19.9999C21.3345 21.0684 20.9183 22.0728 20.1628 22.8284C19.4073 23.5839 18.4028 24 17.3344 24ZM9.33439 15.9999C8.99312 15.9999 8.6519 15.8698 8.39158 15.6094C7.8709 15.0888 7.8709 14.2445 8.39158 13.7238L19.4488 2.66665H14.6677C13.9313 2.66665 13.3344 2.06973 13.3344 1.33331C13.3344 0.596893 13.9313 -2.9637e-05 14.6677 -2.9637e-05H22.6678C23.016 -0.000430083 23.3504 0.135765 23.5992 0.379288L23.5993 0.379381L23.6019 0.38199L23.6027 0.382735L23.6047 0.384784L23.6061 0.386135L23.6076 0.387625L23.6105 0.390513L23.6134 0.393401L23.6148 0.394891L23.6162 0.396242C23.6172 0.397124 23.6181 0.398073 23.619 0.399083L23.6216 0.401738L23.6217 0.401831C23.8652 0.650679 24.0013 0.985102 24.001 1.33326V9.33326C24.001 10.0697 23.404 10.6666 22.6676 10.6666C21.9312 10.6666 21.3343 10.0697 21.3343 9.33326V4.5523L10.277 15.6095C10.0168 15.8698 9.67561 15.9999 9.33439 15.9999Z"
+                              fill="#FFF" />
+                          </svg>
+
+
+                        </a>
+                        <a class="github-link" href="https://github.com/Singhaditya3116/Todo-List"  target="_blank">
 
                           <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
