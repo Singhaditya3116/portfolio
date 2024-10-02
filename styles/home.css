@@ -74,16 +74,21 @@ body {
 
 
 .section-header{display:flex;justify-content: center;align-items: center;margin-bottom: 44px;}
-.section-header .icon-wrap{max-width: 60px;margin-right: 16px;}
+.section-header .icon-wrap{max-width: 60px;flex-shrink: 0; margin-right: 16px;}
 .section-header .section-title{font-size: 24px;font-weight: 600;}
 
 .section-2{padding:44px 0;}
-.section-2 .skills-wrapper ul{display: flex;flex-wrap: wrap;gap:16px}
-.section-2 .skills-wrapper li{flex: 1 1 200px;}
-.section-2 .skills-wrapper .skill{position: relative;width: 200px; padding: 10px 16px 10px 16px;cursor: pointer; background-color: #FFF;border:2px solid #FFF; border-radius: 50px;overflow: hidden;}
-.section-2 .skills-wrapper .skill:hover{border-color: #15803d;}
-.section-2 .skills-wrapper .skill .title{position: relative;z-index: 10;font-size: 18px;color:#000;font-weight: 600;}
-.section-2 .skills-wrapper .skill-progress{position:absolute;left: 0;top: 0;width: 40%;height: 100%; background-color: #15803d;}
+.section-2 .skills-wrapper ul{display: flex;justify-content: center; flex-wrap: wrap;gap:16px}
+.section-2 .skills-wrapper li{flex: 0 1 200px;}
+.section-2 .skills-wrapper .skill{display: flex;align-items: center; padding: 8px 12px 8px 12px;cursor: pointer;border-radius: 12px;box-shadow: 1px 1px 12px 0px rgba(109, 245, 156, 0.2);}
+.section-2 .skills-wrapper .skill .icon-wrap{flex-shrink: 0; margin-right: 8px;}
+.section-2 .skills-wrapper .skill .icon-wrap svg{display: block;width: 100%;height: 100%;}
+.section-2 .skills-wrapper .skill .title{position: relative;z-index: 10;font-size: 18px;font-weight: 600;}
+/* .section-2 .skills-wrapper .skill-progress{position:absolute;left: 0;top: 0;width: 40%;height: 100%; background-color: #15803d;} */
+
+@media screen and (max-width: 767px){
+  .section-2 .skills-wrapper li{flex: 1 1 200px;}
+}
 
 
 .section-3{padding:44px 0;}
