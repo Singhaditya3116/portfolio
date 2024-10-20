@@ -81,7 +81,7 @@ video {
     box-sizing: border-box;
     word-wrap: break-word;
     -webkit-tap-highlight-color: transparent;
-    font-family: "Poppins",sans-serif;
+    font-family: "Montserrat",sans-serif;
 }
 
 :after,
@@ -240,20 +240,20 @@ body {
 
 
 @font-face {
-    font-family: "Poppins";
-    src: url("./../fonts/Poppins-Regular.woff2") format('woff2');
+    font-family: "Montserrat";
+    src: url("./../fonts/Montserrat-Medium.woff2") format('woff2');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: "Poppins";
-    src: url("./../fonts/Poppins-SemiBold.woff2") format('woff2');
+    font-family: "Montserrat";
+    src: url("./../fonts/Montserrat-SemiBold.woff2") format('woff2');
     font-weight: 600;
 }
 
 
 @font-face {
-    font-family: "Poppins";
-    src: url("./../fonts/Poppins-Bold.woff2") format('woff2');
+    font-family: "Montserrat";
+    src: url("./../fonts/Montserrat-Bold.woff2") format('woff2');
     font-weight: 700;
 }
