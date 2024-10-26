@@ -90,7 +90,7 @@ body.showmenubar .header .close-menu{display: block;}
 
 
 @media screen and (max-width: 767px){
-  .section-2 .skills-wrapper li{flex: 1 1 200px;}
+  .section-2 .skills-wrapper li{flex: 1 1 auto;}
 }
 /* Section 2 */
 
