@@ -12,6 +12,7 @@
 .section-3 .tile-header .right-wrap{align-self: flex-end;font-size: 18px;color: #B3B3B3;}
 .section-3 .tile-content{padding: 0 0 0 52px;}
 .section-3 .tile-content li{position: relative;padding-left: 32px;font-size: 18px;line-height: 26px;}
+.section-3 .tile-content li a{display: inline;color: #00aaff;text-decoration: underline;text-underline-offset: 3px;}
 .section-3 .tile-content li:before{position: absolute;content: "";left: -4px;top: 10px;border-style: solid;border-width: 5px;border-color: #4CAF50 #4CAF50 transparent transparent; transform: rotate(45deg);}
 .section-3 .aeroplane-track{position: absolute;left: 20px; top:0px; height: 100%;background-color: #121212; border-left: 4px dashed #333333;}
 .section-3 .aeroplane-track .icon-wrap{position: sticky;top: 200px; transform: translateX(-54%);}

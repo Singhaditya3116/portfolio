@@ -46,7 +46,7 @@ body.showmenubar .header .close-menu{display: block;}
 .banner::after {content: '';position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: linear-gradient(90deg, rgba(18, 18, 18, 0.7) 20%,
  rgba(0,0,0,0) 100%);}
 .banner .content-wrap{display: flex;justify-content: space-between;position: relative;z-index: 99;}
-.banner .content-wrap .left-wrap .title{margin-bottom: 12px; font-size: 42px;line-height: 46px;font-weight: 700;}
+.banner .content-wrap .left-wrap .title{margin-bottom: 8px; font-size: 42px;line-height: 46px;font-weight: 700;}
 .banner .content-wrap .left-wrap .sub-title{margin-bottom: 24px; font-size: 28px;line-height: 32px;font-weight: 600;}
 .banner .content-wrap .left-wrap .desc{max-width: 558px; font-size: 20px;line-height: 24px;font-weight: 400;}
 .banner .content-wrap .right-wrap{position: relative; margin-right: 60px;}
