@@ -678,19 +678,25 @@
           </div>
           <div class="card-wrapper">
             <ul>
-              <!-- <li>
+              <li>
                 <div class="card">
                   <div class="img-wrapper">
-                    <img src="./img/portfolio.png" alt="Netflix" loading="lazy">
+                    <picture>
+                      <source media="(max-width:767px)" srcset="./img/netflix-mob.jpg">
+                      <img src="./img/netflix.jpg" alt="Netflix Project" loading="lazy" width="410" height="200">
+                    </picture>
                   </div>
                   <div class="card-content">
                     <div class="upper-wrap">
                       <div class="card-title">
-                        Netlix GPT
+                        Netflix Gemini
                       </div>
                       <div class="card-desc">
-                        This is a an web app which is integrated with Chatgpt to search movies and also movieDB APi to
-                        get all information related to the movie.
+                        <ul>
+                          <li>Developed a responsive movie recommendation platform with a Netflix-like UI, showcasing popular, trending, and now-playing movies.</li>
+                          <li>Designed a secure user authentication system using Firebase as the backend to store and manage user information.</li>
+                          <li>Integrated Google Gemini API to provide intelligent movie recommendations based on user input.</li>
+                        </ul>
                       </div>
                     </div>
                     <div class="lower-wrap">
@@ -705,7 +711,7 @@
                       </div>
 
                       <div class="action-wrapper">
-                        <a href="#" class="live-link">
+                        <a href="https://coldstar.netlify.app/" class="live-link" target="_blank">
 
 
                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -717,7 +723,7 @@
 
 
                         </a>
-                        <a href="" class="github-link" aria-label="Github Link">
+                        <a href="https://github.com/Singhaditya3116/Netflix" class="github-link" aria-label="Github Link" target="_blank">
 
                           <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -731,7 +737,7 @@
                     </div>
                   </div>
                 </div>
-              </li> -->
+              </li>
               <li>
                 <div class="card">
                   <a class="img-wrapper" href="https://youtubevanced.netlify.app/" target="_blank" aria-label="Website Link">
@@ -747,8 +753,6 @@
                       </div>
                       <div class="card-desc">
                         <ul>
-                          <li>This web application is a clone of YouTube, allowing users to browse and watch videos sourced
-                            from the YouTube API.</li>
                           <li>This web application is a clone of YouTube, allowing users to browse and watch videos sourced
                             from the YouTube API.</li>
                           <li>Additionally, a nested comment feature is build, fostering a community-like experience.</li>
